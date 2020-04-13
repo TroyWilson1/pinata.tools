@@ -22,7 +22,7 @@ parser.add_argument('-i','--input', help='Hash to add to Pinata.Cloud', required
 parser.add_argument('-n','--name', help='Name of hash added to Pinata.Cloud', required=True)
 args = parser.parse_args()
 
-url = 'https://api.pinata.cloud/pinning/pinHashToIPFS'
+url = 'https://api.pinata.cloud/pinning/pinByHash'
 hashToPin = (args.input)
 hashName = (args.name)
 
