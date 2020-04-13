@@ -37,7 +37,7 @@ body = {
 }
 
 try: 
-    url = 'https://api.pinata.cloud/pinning/addHashToPinQueue'
+    url = 'https://api.pinata.cloud/pinning/pinByHash'
     r = requests.post(url, headers=headers, json=body)
     fullResponce = ast.literal_eval(r.text)
     print("Pinata Hash Pinned: " + fullResponce['IpfsHash'])
